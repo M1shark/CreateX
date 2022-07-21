@@ -123,6 +123,33 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/components/tab.js":
+/*!**********************************!*\
+  !*** ./src/js/components/tab.js ***!
+  \**********************************/
+/***/ (() => {
+
+let tabNav = document.querySelectorAll(".benefits__row-item");
+let tab = document.querySelectorAll(".benefits__tab");
+tabNav.forEach(function (item) {
+  item.addEventListener('click', function () {
+    let currentBtn = item;
+    let tabId = currentBtn.getAttribute("data-tab");
+    let currentTab = document.querySelector(tabId);
+    console.log(currentTab);
+    tabNav.forEach(function (i) {
+      i.classList.remove("active-tab");
+    });
+    tab.forEach(function (i) {
+      i.classList.remove("tab-active");
+    });
+    item.classList.add("active-tab");
+    currentTab.classList.add("tab-active");
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/functions/burger.js":
 /*!************************************!*\
   !*** ./src/js/functions/burger.js ***!
@@ -667,6 +694,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_tab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/tab */ "./src/js/components/tab.js");
+/* harmony import */ var _components_tab__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_tab__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
