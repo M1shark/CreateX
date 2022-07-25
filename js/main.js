@@ -138,6 +138,10 @@ swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MOD
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".testimonials__content", {
   pagination: {
     el: ".swiper-pagination"
+  },
+  navigation: {
+    nextEl: '.testimonials__slide-next',
+    prevEl: '.testimonials__slide-prev'
   }
 });
 
